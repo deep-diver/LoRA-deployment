@@ -1,6 +1,6 @@
 # LoRA-deployment
 
-This repository demonstrates how to serve multiple [LoRA fine-tuned Stable Diffusions](https://huggingface.co/blog/lora) from 🧨 Diffusers library on Hugging Face Inference Endpoint. Since only fewㅇㄷ MB of checkpoint is produced after finetuning with LoRA, we can switch different checkpoint for different fine-tuned Stable Diffusion in super quick, memory efficient, and disk space efficient ways.
+This repository demonstrates how to serve multiple [LoRA fine-tuned Stable Diffusions](https://huggingface.co/blog/lora) from 🧨 Diffusers library on Hugging Face Inference Endpoint. Since only few ~ MB of checkpoint is produced after finetuning with LoRA, we can switch different checkpoint for different fine-tuned Stable Diffusion in super quick, memory efficient, and disk space efficient ways.
 
 For demonstration purpose, I have tested the following Hugging Face Model repositories which has LoRA fine-tuned checkpoint(`pytorch_lora_weights.bin
 `):
