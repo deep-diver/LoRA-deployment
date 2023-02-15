@@ -6,7 +6,7 @@ import numpy as np
 import requests as r
 from PIL import Image
 
-HF_TOKEN = "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"
+HF_TOKEN = ""
 ENDPOINT_URL = "https://yhsqcghraq9fi35s.us-east-1.aws.endpoints.huggingface.cloud"
 
 def get_random_string(length):
