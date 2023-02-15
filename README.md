@@ -10,8 +10,18 @@ For demonstration purpose, I have tested the following Hugging Face Model reposi
 
 ## Notebook
 
-- [Pilot notebook](https://github.com/deep-diver/LoRA-deployment/blob/main/notebooks/pilot.ipynb): shows how to write and test a custom handler for Hugging Face Inference Endpoint in local or Colab environments.
-- [Inference notebook](https://github.com/deep-diver/LoRA-deployment/blob/main/notebooks/inference.ipynb): shows how to run inference on the custom handler deployed to Hugging Face Inference Endopint.
+- [Pilot notebook](https://github.com/deep-diver/LoRA-deployment/blob/main/notebooks/pilot.ipynb): shows how to write and test a custom handler for Hugging Face Inference Endpoint in local or Colab environments
+- [Inference notebook](https://github.com/deep-diver/LoRA-deployment/blob/main/notebooks/inference.ipynb): shows how to request inference to the custom handler deployed on Hugging Face Inference Endopint
+- [Multi-workers inference notebook](https://github.com/deep-diver/LoRA-deployment/blob/main/notebooks/multiworker_inference.ipynb): shows how to run simultaneous requests to the custom handler deployed on Hugging Face Inference Endpoint in Colab environment
+
+## Custom Handler
+
+- [handler.py](https://github.com/deep-diver/LoRA-deployment/blob/main/custom_handler/handler.py): basic handler. This custom handler is proved to work with [this Hugging Face Model repo](https://huggingface.co/chansung/LoRA-deployment)
+- [multiworker_handler.py](https://github.com/deep-diver/LoRA-deployment/blob/main/custom_handler/multiworker_handler.py): advanced handler with multiple worker(Stable Diffusion) pool. This custom handler is proved to work with [this Hugging Face Model repo](https://huggingface.co/chansung/LoRA-deployment-multiworkers)
+
+## Script
+
+- [inference.py](https://github.com/deep-diver/LoRA-deployment/blob/main/scripts/inference.py): standalone Python script to send requests to the custom handler deployed on Hugging Face Inference Endpoint
 
 ## Reference
 - https://huggingface.co/blog/lora
